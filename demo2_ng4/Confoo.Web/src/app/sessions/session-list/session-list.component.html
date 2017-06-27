@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <a *ngFor="let session of sessions" class="list-group-item" style="cursor:pointer;">
+        <h2>{{ session.title }}</h2>
+        <h4>{{ session.speaker }} - {{ session.date }}</h4>
+        <div>{{ session.description }}</div>
+      </a>
+    </ul>
+  </div>
+</div>

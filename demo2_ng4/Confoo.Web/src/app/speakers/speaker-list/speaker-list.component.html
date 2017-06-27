@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-xs-12">
+    <app-speaker-item 
+      *ngFor="let speaker of speakers"
+      [speaker]="speaker"
+      (speakerSelected)="onSpeakerSelected(speaker)">
+    </app-speaker-item>
+  </div>
+</div>
